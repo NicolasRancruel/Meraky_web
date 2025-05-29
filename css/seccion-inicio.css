@@ -2,7 +2,7 @@
   width: 100vw;
   height: 90vh;
   min-height: 340px;
-  background: url('img/hero-meraky.jpg') center center/cover no-repeat;
+  background: url('../img/hero-meraky.jpg') center center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
