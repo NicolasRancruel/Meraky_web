@@ -1,0 +1,19 @@
+#hero {
+  width: 100vw;
+  height: 90vh;
+  min-height: 340px;
+  background: url('hero-meraky.jpg') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(80, 80, 80, 0.45);
+  padding: 48px 32px;
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+  max-width: 800px;
+}

@@ -1,0 +1,82 @@
+.grupo-materiales {
+  margin-top: 10px;
+}
+
+.subtitulo-material {
+  font-size: 1.6em;
+  color: #2d97b8;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.grid-materiales {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.tarjeta-material {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 160px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.tarjeta-material:hover {
+  transform: translateY(-8px);
+}
+
+.tarjeta-material img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.tarjeta-material h3 {
+  color: #2d97b8;
+  margin: 10px 0 6px;
+}
+
+.tarjeta-material p {
+  font-size: 0.9em;
+  color: #444;
+}
+
+.tooltip-material {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  padding: 10px;
+  min-width: 420px;
+  z-index: 10;
+  display: none;
+}
+
+.tarjeta-material:hover .tooltip-material {
+  display: block;
+}
+
+/* Estilo específico para la lista */
+.tooltip-material ul {
+  padding-left: 18px;
+  margin: 10px 0 0;
+  list-style-type: disc;
+}
+
+.tooltip-material li {
+  font-size: 0.85em;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
