@@ -29,7 +29,7 @@ footer .footer-content a:hover img {
   filter: brightness(1.3);
 }
 
-@media (max-width: 380px) {
+@media (max-width: 180px) {
   .footer-content a {
     display: block;
     margin: 10px auto;
