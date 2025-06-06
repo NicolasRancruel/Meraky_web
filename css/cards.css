@@ -23,7 +23,7 @@
     gap: 16px;
   }
   .card {
-    width: 90%;      /* O puedes usar 100% menos un margen */
+    width: 100%;      /* O puedes usar 100% menos un margen */
     max-width: 400px;
   }
 }
