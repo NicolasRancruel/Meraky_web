@@ -220,3 +220,15 @@ section {
   backdrop-filter: none;
   opacity: 1;
 }
+
+/* Pega este código al final de tu archivo layout.css */
+
+@media (max-width: 768px) {
+  main {
+    /* Hacemos que ocupe casi todo el ancho y eliminamos sombras */
+    width: 95%;
+    padding: 20px 15px; /* Ajustamos el padding lateral */
+    margin-top: 20px;
+    box-shadow: none;
+  }
+}
