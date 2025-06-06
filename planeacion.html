@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 <body>
-<header>
-  <div class="header-content">
-    <img src="img\LOGO_MERAKY.png" alt="Logo Meraky" />
+
+      <header class="header-azul">
+      <div class="header-content">
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
@@ -23,21 +23,80 @@
             <li><a href="capacitacion.html">Capacitación</a></li>
           </ul>
         </li>
-        <li><a href="index.html#nosotros">Nosotros</a></li>
-        <li><a href="index.html#contacto">Contacto</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
+    <div class="logo-right">
+      <img src="img\LOGO_MERAKY.png" alt="Logo Meraky" />
+    </div>
   </div>
 </header>
 
 <main>
-  <h1>Planeación Quirúrgica</h1>
-  <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-around; gap: 20px; margin-top: 40px;">
-    <img src="img\planeacion.jpg" alt="Imagen planeación" style="max-width: 400px; border-radius: 10px;">
-    <p style="flex: 1; min-width: 280px; text-align: justify;">
-      En Meraky ofrecemos un servicio de planeación quirúrgica personalizada. Utilizamos imágenes médicas (TAC, RM) para desarrollar modelos 3D precisos que guían a los profesionales en cirugías complejas. Este proceso permite simular procedimientos, prever complicaciones y diseñar guías quirúrgicas específicas para cada paciente.
-    </p>
+
+<section class="flujo-circular">
+  <h2>Etapas del Proceso</h2>
+  <div class="circle-flow">
+    <div class="circle-item item1" tabindex="0">
+      <img src="img/etapa1.png" alt="Análisis del caso" class="img-etapa-circ">
+      <span class="circle-num">1</span>
+      <h3>Análisis del caso</h3>
+      <div class="desc-hover">
+        Identificación del defecto por el especialista y solicitud de TAC simple de cráneo o cara.
+      </div>
+    </div>
+    <div class="circle-item item2" tabindex="0">
+      <img src="img/etapa2.png" alt="Planeación virtual" class="img-etapa-circ">
+      <span class="circle-num">2</span>
+      <h3>Planeación virtual</h3>
+      <div class="desc-hover">
+        El ingeniero biomédico realiza la planeación 3D del defecto usando software especializado.
+      </div>
+    </div>
+    <div class="circle-item item3" tabindex="0">
+      <img src="img/etapa3.png" alt="Impresión 3D" class="img-etapa-circ">
+      <span class="circle-num">3</span>
+      <h3>Impresión 3D</h3>
+      <div class="desc-hover">
+        Se imprimen modelos físicos en PLA para simular el implante y validar el ajuste.
+      </div>
+    </div>
+    <div class="circle-item item4" tabindex="0">
+      <img src="img/etapa4.png" alt="Validación" class="img-etapa-circ">
+      <span class="circle-num">4</span>
+      <h3>Validación</h3>
+      <div class="desc-hover">
+        El especialista valida el biomodelo impreso para asegurar el ajuste preciso.
+      </div>
+    </div>
+    <div class="circle-item item5" tabindex="0">
+      <img src="img/etapa5.png" alt="Fabricación" class="img-etapa-circ">
+      <span class="circle-num">5</span>
+      <h3>Fabricación</h3>
+      <div class="desc-hover">
+        El implante es fabricado en laboratorio certificado usando PEEK o PMMA.
+      </div>
+    </div>
+    <div class="circle-item item6" tabindex="0">
+      <img src="img/etapa6.png" alt="Esterilización" class="img-etapa-circ">
+      <span class="circle-num">6</span>
+      <h3>Esterilización</h3>
+      <div class="desc-hover">
+        El implante y biomodelos se esterilizan a baja temperatura.
+      </div>
+    </div>
+    <div class="circle-item item7" tabindex="0">
+      <img src="img/etapa7.png" alt="Cirugía" class="img-etapa-circ">
+      <span class="circle-num">7</span>
+      <h3>Cirugía</h3>
+      <div class="desc-hover">
+        Realización de la cirugía con apoyo de los modelos y colocación del implante.
+      </div>
+    </div>
+    <div class="circle-center">Implante a la Medida</div>
   </div>
+</section>
 
   <h2 style="margin-top: 60px;">Casos clínicos a la medida</h2>
   <div class="swiper mySwiper" style="max-width: 800px; margin: auto;">

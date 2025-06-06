@@ -1,6 +1,6 @@
 #hero {
   width: 100vw;
-  height: 90vh;
+  height: 60vh;
   min-height: 340px;
   background: url('../img/hero-meraky.jpg') center center/cover no-repeat;
   display: flex;
