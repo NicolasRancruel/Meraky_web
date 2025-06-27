@@ -2,7 +2,6 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Planeación Quirúrgica - Meraky</title>
   <link rel="icon" type="image/png" href="img\favicon.png">
   <link rel="stylesheet" href="css/style.css">
@@ -23,7 +22,7 @@
             <li><a href="capacitacion.html">Capacitación</a></li>
           </ul>
         </li>
-        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="sobre-nosotros.html">Nosotros</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -98,7 +97,7 @@
   </div>
 </section>
 
-  <h2 style="margin-top: 60px;">Casos clínicos a la medida</h2>
+<h2 class="titulo-casos">Casos clínicos a la medida</h2>
   <div class="swiper mySwiper" style="max-width: 800px; margin: auto;">
     <div class="swiper-wrapper">
       <div class="swiper-slide"><img src="img\planeacion1.png" alt="Caso planeación 1"></div>
@@ -108,8 +107,6 @@
     </div>
     <div class="swiper-pagination"></div>
   </div>
-
-  <a class="volver" href="index.html">&larr; Volver al inicio</a>
 </main>
 
 <footer>
@@ -124,23 +121,7 @@
     <p><a href="index.html">Inicio</a> | <a href="index.html#contacto">Contáctanos</a></p>
   </div>
 </footer>
-
-<script>
-  document.getElementById("anio").textContent = new Date().getFullYear();
-</script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script>
-  const swiper = new Swiper(".mySwiper", {
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-</script>
+<script src="js/main.js"></script>
 </body>
 </html>

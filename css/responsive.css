@@ -1,0 +1,175 @@
+/* ======= responsive.css ======= */
+
+/* ---- Ajustes generales para pantallas menores a 1200px ---- */
+@media (max-width: 1200px) {
+
+  /* Servicios: 2 columnas */
+  .servicios-barra {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .servicio {
+    min-height: 150px;
+    height: 160px;
+  }
+}
+
+/* ---- Para pantallas menores a 900px (Tablet vertical y móvil grande) ---- */
+@media (max-width: 900px) {
+
+  /* Servicios: 1 columna apilada */
+  .servicios-barra {
+    grid-template-columns: 1fr;
+  }
+  .servicio {
+    min-height: 110px;
+    height: 110px;
+  }
+  .contenido-servicio {
+    padding: 18px 6px 10px 6px;
+    font-size: 1.01rem;
+  }
+
+  /* Header: menú y logo apilados si tienes flex-direction: row */
+  .header-content {
+    flex-direction: column;
+    height: auto;
+    padding: 16px 10px 10px 10px;
+    gap: 12px;
+  }
+  .logo-right img,
+  .logo-right .logo-text {
+    max-width: 140px;
+    height: auto;
+    font-size: 0.92rem;
+  }
+}
+
+/* ---- Móviles (pantallas menores a 700px) ---- */
+@media (max-width: 700px) {
+
+  /* Imagen hero y esqueleto: máximo ancho */
+  .esqueleto-interactivo img,
+  #hero {
+    max-width: 98vw;
+    width: 100vw;
+  }
+
+  /* Tooltips más pequeños y adaptados */
+  .tooltip-personalizado {
+    min-width: 140px;
+    max-width: 90vw;
+    padding: 12px 3vw 10px 3vw;
+    font-size: 0.97rem;
+  }
+  .tooltip-personalizado img {
+    width: 95px !important;
+    height: 95px !important;
+  }
+
+  /* Hero: tamaño del texto más pequeño */
+  #hero h1 {
+    font-size: 1.25rem;
+  }
+  #hero p {
+    font-size: 1rem;
+  }
+
+  /* Servicios: paddings menores */
+  .contenido-servicio {
+    padding: 12px 3px 8px 3px;
+    font-size: 0.96rem;
+  }
+  .contenido-servicio h3 {
+    font-size: 1.04rem;
+  }
+}
+
+/* ---- Ajustes mínimos para pantallas MUY pequeñas ---- */
+@media (max-width: 430px) {
+  .tooltip-personalizado {
+    min-width: 100px;
+    font-size: 0.93rem;
+    padding: 8px 1vw 8px 1vw;
+  }
+  .tooltip-personalizado img {
+    width: 64px !important;
+    height: 64px !important;
+  }
+  .contenido-servicio h3 {
+    font-size: 0.89rem;
+  }
+}
+
+/* ---- Otros pequeños ajustes ---- */
+@media (max-width: 360px) {
+  .header-content,
+  .logo-right {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
+/* ------- Ajustes para que todo quede pegado arriba si usas hero con imagen ------- */
+#servicios, .servicios-barra {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+@media (max-width: 950px) {
+  .circle-item { width: 130px; height: 130px; }
+  .img-etapa-circ { width: 45px; height: 45px; }
+  .circle-center { width: 130px; height: 130px; font-size: 0.95rem; }
+  .flujo-circular h2 { font-size: 1.4rem; }
+}
+@media (max-width: 650px) {
+  .circle-flow { gap: 13px 6px; }
+  .circle-item { width: 90px; height: 90px; padding-bottom: 0;}
+  .img-etapa-circ { width: 30px; height: 30px; }
+  .circle-num { width: 16px; height: 16px; font-size: 0.75rem; top: 2px; right: 5px; }
+}
+@media (max-width: 500px) {
+  .flujo-circular { margin-top: 24vw; }
+}
+
+@media (max-width: 900px) {
+  .header-content {
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 5vw;
+    min-height: 64px;
+  }
+  .logo-right img {
+    height: 39px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer-content img {
+    height: 32px;
+  }
+  .footer-content p, .footer-content a {
+    font-size: 0.92rem;
+  }
+  .volver {
+    font-size: 0.95rem;
+    padding: 8px 10px;
+  }
+  .swiper-slide img {
+    max-height: 190px;
+  }
+}
+@media (max-width: 900px) {
+  .circle-center {
+    width: 110px;
+    height: 110px;
+    font-size: 0.83rem;
+    padding: 7px;
+  }
+  .desc-hover {
+    min-width: 100px;
+    max-width: 160px;
+    font-size: 0.91rem;
+    padding: 8px 7px;
+  }
+}
