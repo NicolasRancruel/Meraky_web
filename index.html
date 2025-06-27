@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Meraky - Soluciones a la medida</title>
   <link rel="icon" type="image/png" href="img\favicon.png">
+  <!-- Google Fonts: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   
   <!-- SEO Básico -->
   <meta name="description" content="Meraky ofrece implantes personalizados a la medida, planificación quirúrgica y soluciones innovadoras en materiales como PEEK y PMMA.">
@@ -17,17 +19,18 @@
 <body>
 
 <!-- HEADER que aparece al hacer scroll -->
-<header id="main-header" class="transparente">
+
+<header id="main-header">
   <div class="header-content">
     <nav>
-      <ul>
+      <ul class="nav-menu">
         <li><a href="index.html">Inicio</a></li>
-        <li>
+        <li class="has-submenu">
           <a href="#">Soluciones</a>
-          <ul>
-            <li><a href="consultoria.html">Consultoría</a></li>
+          <ul class="submenu">
+            <li><a href="consultoria.html">Consultoría y capacitación</a></li>
             <li><a href="materiales.html">Materiales</a></li>
-            <li><a href="capacitacion.html">Capacitación</a></li>
+            <li><a href="capacitacion.html">Noticias</a></li>
           </ul>
         </li>
         <li><a href="sobre-nosotros.html">Nosotros</a></li>
@@ -35,25 +38,25 @@
       </ul>
     </nav>
     <div class="logo-right">
-      <img src="img\LOGO_MERAKY.png" alt="Logo Meraky" />
+      <img src="img/LOGO_MERAKY.png" alt="Logo Meraky" />
     </div>
   </div>
 </header>
 
 <!-- Hero inicial con imagen de fondo -->
- 
+
 <section id="hero">
   <div class="hero-overlay">
-    <h1>Meraky - Soluciones a la medida</h1>
-    <p>Implantes personalizados para necesidades únicas</p>
+    <img src="img/LOGO_MERAKY.png" alt="Logo Meraky" style="max-width: 340px; width: 80%; height: auto;">
   </div>
 </section>
 
+
 <!-- ========== NUESTROS SERVICIOS ========== -->
-<section id="servicios" class="servicios-grid">
-    <div class="servicio" style="background-image: url('img/planeacion.png');">
+<section id="servicios" class="servicios-barra">
+  <div class="servicio" style="background-image: url('img/planeacion.png');">
     <a href="planeacion.html">
-      <div class="overlay">
+      <div class="contenido-servicio">
         <h3>Planeación Quirúrgica</h3>
         <p>Planificación digital de cirugías</p>
       </div>
@@ -61,7 +64,7 @@
   </div>
   <div class="servicio" style="background-image: url('img/craneales.jpg');">
     <a href="craneales.html">
-      <div class="overlay">
+      <div class="contenido-servicio">
         <h3>Craneales</h3>
         <p>Reconstrucción personalizada en cráneo</p>
       </div>
@@ -69,7 +72,7 @@
   </div>
   <div class="servicio" style="background-image: url('img/maxilofaciales.jpg');">
     <a href="maxilofaciales.html">
-      <div class="overlay">
+      <div class="contenido-servicio">
         <h3>Maxilofaciales</h3>
         <p>Implantes mandibulares y más</p>
       </div>
@@ -77,7 +80,7 @@
   </div>
   <div class="servicio" style="background-image: url('img/veterinarios.png');">
     <a href="veterinarios.html">
-      <div class="overlay">
+      <div class="contenido-servicio">
         <h3>Veterinarios</h3>
         <p>Soluciones quirúrgicas para animales</p>
       </div>
@@ -85,7 +88,7 @@
   </div>
   <div class="servicio" style="background-image: url('img/LOGO_MERAKY.png');">
     <a href="ortopedia.html">
-      <div class="overlay">
+      <div class="contenido-servicio">
         <h3>Ortopedia</h3>
         <p>Próximamente</p>
       </div>
@@ -98,7 +101,7 @@
   <div class="contenedor-nosotros">
     <img src="img/equipo_meraky.jpg" alt="Equipo profesional de Meraky trabajando" />
     <div class="texto-nosotros">
-      <h2>En meraky ponemos el alma, el corazón, la creatividad y el amor en aquello que hacemos..</h2>
+      <h2>En Meraky ponemos el alma, el corazón, la creatividad y el amor en aquello que hacemos..</h2>
       <p>
         Somos una empresa colombiana con más de 7 años de experiencia, brindando innovación especializada en diseño y fabricación de implantes personalizados, trabajando de la mano con neurocirujanos maxilofaciales, cirujanos de torax y cirujanos ortopedistas.
       </p>
@@ -111,39 +114,49 @@
 <section id="cirugias-implantes">
   <h2 style="text-align:center; color:#000000;">Usos anatómicos para implantes craneomaxilofaciales a la medida</h2>
   <div class="esqueleto-interactivo">
-    <img src="img\Craneo.png" alt="Esqueleto humano Meraky" />  
-    <!-- Tooltips anatómicos -->
+    <img src="img/Craneo.png" alt="Esqueleto humano Meraky" />
+
+    <!-- Ejemplo 1: tooltip a la derecha -->
     <div class="punto" style="top: 20%; left: 50%;">
-      <div class="tooltip-personalizado">
-        <img src="img\implante-craneo.png" alt="Implante craneal" />
+      <span></span>
+      <div class="tooltip-personalizado" style="top: -10px; left: 40px;">
+        <img src="img/implante-craneo.png" alt="Implante craneal" />
         <h3>Implante Craneal</h3>
         <p>Diseñado a medida en PEEK o titanio para reconstrucción ósea.</p>
       </div>
-    </div> 
-    <div class="punto" style="top: 45%; left: 51%;">
-      <div class="tooltip-personalizado">
-        <img src="img\ojito.png" alt="Implante orbital" />
+    </div>
+    <!-- Ejemplo 2: tooltip arriba -->
+    <div class="punto" style="top: 42%; left: 50%;">
+      <span></span>
+      <div class="tooltip-personalizado" style="bottom: 36px; left: 50%; transform: translateX(-50%);">
+        <img src="img/ojito.png" alt="Implante orbital" />
         <h3>Implante Orbital</h3>
         <p>Reconstrucción personalizada para cavidad ocular.</p>
       </div>
-    </div> 
-    <div class="punto" style="top: 56%; left: 40%;">
-      <div class="tooltip-personalizado">
-        <img src="img\ojito2.png" alt="Implante orbitario" />
+    </div>
+    <!-- Ejemplo 3: tooltip a la izquierda -->
+    <div class="punto" style="top: 55%; left: 45%;">
+      <span></span>
+      <div class="tooltip-personalizado" style="top: -10px; right: 40px;">
+        <img src="img/ojito2.png" alt="Implante orbitario" />
         <h3>Implante Orbitario</h3>
         <p>Diseño anatómico para reconstrucción ocular derecha.</p>
       </div>
     </div>
-    <div class="punto" style="top: 78%; left: 54%;">
-      <div class="tooltip-personalizado">
-        <img src="img\mandi.png" alt="Implante mandibular personalizado" />
+    <!-- Ejemplo 4: tooltip abajo -->
+    <div class="punto" style="top: 75%; left: 52%;">
+      <span></span>
+      <div class="tooltip-personalizado" style="top: 36px; left: 50%; transform: translateX(-50%);">
+        <img src="img/mandi.png" alt="Implante mandibular personalizado" />
         <h3>Implante Mandibular</h3>
         <p>Diseño 3D exacto para reconstrucción mandibular.</p>
       </div>
     </div>
-    <div class="punto" style="top: 85%; left: 30%;">
-      <div class="tooltip-personalizado">
-        <img src="img\menton.png" alt="Implante de mentón" />
+    <!-- Ejemplo 5: tooltip abajo derecha -->
+    <div class="punto" style="top: 85%; left: 40%;">
+      <span></span>
+      <div class="tooltip-personalizado" style="top: 36px; left: 40px;">
+        <img src="img/menton.png" alt="Implante de mentón" />
         <h3>Implante Mentón</h3>
         <p>Restauración estética y funcional del mentón.</p>
       </div>
@@ -184,7 +197,7 @@
         <img src="img\whatsapp-icon.png" alt="WhatsApp Meraky" style="height: 24px; margin: 0 8px;" />
       </a>
     </div>
-    <p><a href="#inicio">Inicio</a> | <a href="#contacto">Contáctanos</a></p>
+    <p><a href="index.html">Inicio</a> | <a href="#contacto">Contáctanos</a></p>
   </div>
 </footer>
 

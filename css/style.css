@@ -1,11 +1,17 @@
-@import url("layout.css");
-@import url("header.css");
-@import url("footer.css");
-@import url("cards.css");
-@import url("seccion-servicios.css");
-@import url("materiales.css");
-@import url("carrusel.css");
-@import url("formulario.css");
-@import url("tooltip.css");
-@import url("seccion-inicio.css");
-@import url("planeacion.css");
+@import url('layout.css');
+@import url('header.css');
+@import url('hero.css');
+@import url('servicios.css');
+@import url('nosotros.css');
+@import url('esqueleto.css');
+@import url('contacto.css');
+@import url('footer.css');
+@import url('responsive.css');
+@import url('planeacion.css');
+@import url('carrusel.css');
+@import url('craneales.css');
+@import url('materiales.css');
+@import url('sobre-nosotros.css');
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+}

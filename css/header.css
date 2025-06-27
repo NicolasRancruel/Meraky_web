@@ -1,110 +1,137 @@
 #main-header {
   position: fixed;
+  width: 100vw;
   top: 0;
   left: 0;
-  width: 100%;
   z-index: 1000;
-  transition: background-color 0.4s cubic-bezier(.82,.04,.43,.97), box-shadow 0.4s;
   background: transparent;
+  transition: background 0.35s, box-shadow 0.35s;
   box-shadow: none;
-}
-
-#main-header.transparente {
-  background: rgba(45, 151, 184, 0.00); /* completamente transparente */
-  box-shadow: none;
-}
-
-#main-header.fondo-azul {
-  background: #2d97b8;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-}
-
-.header-content {
+  height: 90px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 4vw;
-  height: 100px;
 }
 
-.logo-right {
-  margin-left: auto;
+#main-header.scrolled {
+  background: #2d97b8;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.11);
 }
 
-.logo-right img {
-  height: 70px;
-  display: block;
+/* HEADER GENERAL */
+.header-azul {
+  background: #2d97b8;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 3px 14px rgba(45,151,184,0.07);
+}
+.header-content {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 24px;
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 
-nav ul {
+/* MENÚ PRINCIPAL */
+.header-content nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+  gap: 40px;
+  align-items: center;
 }
-
-nav ul li {
+.header-content nav ul > li {
   position: relative;
-  padding: 10px 20px;
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
-
-nav ul li:last-child {
-  border-right: none;
-}
-
-nav ul li:hover {
-  background-color: #2d97b8;
-  cursor: pointer;
-}
-
-nav ul li a {
-  color: white;
+.header-content nav ul > li > a {
+  color: #fff;
+  font-weight: 800;
+  font-family: 'Montserrat', Arial, sans-serif;
   text-decoration: none;
+  font-size: 1.18rem;
+  padding: 10px 0;
+  transition: color 0.18s;
+  display: inline-block;
+  letter-spacing: 0.2px;
+}
+.header-content nav ul > li > a:hover,
+.header-content nav ul > li > a:focus,
+.header-content nav ul > li.active > a {
+  color: #ffe082;
 }
 
-nav ul li ul {
+/* SUBMENÚ SOLUCIONES */
+.header-content nav ul li ul {
+  display: none;
   position: absolute;
-  background-color: #2d97b8;
-  top: 100%;
   left: 0;
-  list-style: none;
-  padding: 0;
-  min-width: 160px;
-  z-index: 9999;
-  border-radius: 6px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(10px);
-  transition: all 0.3s ease;
+  top: 42px;
+  min-width: 190px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 32px rgba(45,151,184,0.12), 0 2px 14px rgba(0,0,0,0.07);
+  padding: 16px 0 16px 0;
+  z-index: 200;
+  transition: opacity 0.22s;
 }
 
-nav ul li:hover ul {
+/* --- Para que el submenú NO se cierre cuando vas hacia abajo --- */
+.header-content nav ul > li:hover > ul,
+.header-content nav ul > li:focus-within > ul {
   display: block;
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
 }
 
-nav ul li ul li {
-  padding: 12px 16px;
-  color: white;
-  transition: background-color 0.2s ease, color 0.2s ease;
+.header-content nav ul li ul li {
+  width: 100%;
+}
+.header-content nav ul li ul li a {
+  color: #2d97b8;
+  font-weight: 700;
+  padding: 12px 32px;
+  display: block;
+  font-size: 1.09rem;
+  border-radius: 0;
+  background: none;
+  transition: background 0.14s, color 0.15s;
+}
+.header-content nav ul li ul li a:hover {
+  background: #f2fbff;
+  color: #197c9b;
 }
 
-nav ul li ul li:hover {
-  background-color: #1a6f8f;
+/* Para que se vea la sombra al submenú y puedas bajar directo */
+.header-content nav ul li ul:hover, 
+.header-content nav ul li ul:focus-within {
+  display: block;
 }
 
-/* Estilos para dispositivos móviles */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
+/* LOGO A LA DERECHA */
+.logo-right img {
+  height: 56px;
+  display: block;
+  margin-left: 480px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .header-content {
+    padding: 0 10px;
   }
-
-  .nav-links.active {
-    display: flex;
+  .logo-text {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .nav-menu {
+    gap: 1.1rem;
+  }
+  .logo-right img {
+    height: 38px;
   }
 }
