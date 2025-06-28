@@ -1,35 +1,40 @@
+/* CONTENEDOR GENERAL */
 .flujo-circular {
-  max-width: 1100px;
-  margin: 68px auto 38px auto;
+  max-width: 1050px;
+  margin: 80px auto 40px auto;
   text-align: center;
-  padding: 0 1vw;
+  padding: 0 3vw;
 }
 .flujo-circular h2 {
-  font-size: 2.45rem;
+  font-size: 2.3rem;
   font-weight: 900;
   color: #2d97b8;
-  margin-bottom: 46px;
+  margin-bottom: 44px;
   font-family: 'Montserrat', Arial, sans-serif;
   letter-spacing: 0.3px;
 }
+
+/* GRID DE CÍRCULOS */
 .circle-flow {
-  width: 100%;
-  max-width: 900px;
-  margin: auto;
-  min-height: 390px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
-  gap: 28px 35px;  /* Menos espacio para que se vean juntos */
+  align-items: flex-end;
+  gap: 34px 46px; /* horizontal, vertical */
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
   position: relative;
+  min-height: 420px;
 }
+
+/* CÍRCULO INDIVIDUAL */
 .circle-item {
-  width: 176px;
-  height: 176px;
+  width: 148px;
+  height: 148px;
   background: #fff;
   border-radius: 50%;
-  box-shadow: 0 8px 36px rgba(45,151,184,0.13);
+  box-shadow: 0 8px 32px rgba(45,151,184,0.12);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,112 +43,168 @@
   transition: box-shadow 0.19s, transform 0.22s;
   cursor: pointer;
   outline: none;
-  z-index: 1;
-  padding-bottom: 23px;
+  z-index: 5; /* más alto que el centro */
+  padding-bottom: 22px;
+  border: 3px solid #e9f3fa;
 }
 .circle-item:focus, .circle-item:hover {
-  box-shadow: 0 10px 38px rgba(45,151,184,0.22), 0 2px 18px rgba(0,0,0,0.09);
+  box-shadow: 0 12px 38px rgba(45,151,184,0.23), 0 2px 18px rgba(0,0,0,0.09);
   transform: scale(1.07);
+  z-index: 60 !important; /* encima de todo cuando está hover */
 }
 .img-etapa-circ {
-  width: 80px;
-  height: 80px;
+  width: 74px;
+  height: 74px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 14px;
-  border: 4px solid #2d97b8;
-  box-shadow: 0 2px 10px rgba(45,151,184,0.10);
+  margin-bottom: 11px;
+  border: 3.5px solid #2d97b8;
   background: #fff;
 }
 .circle-num {
   position: absolute;
-  top: 13px;
-  right: 21px;
+  top: 8px;
+  right: 14px;
   background: #2d97b8;
   color: #fff;
   font-weight: 900;
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.16rem;
-  border: 2.5px solid #fff;
-  box-shadow: 0 1px 4px rgba(45,151,184,0.13);
+  font-size: 1rem;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(45,151,184,0.12);
   z-index: 2;
 }
 .circle-item h3 {
-  margin: 7px 0 0 0;
-  font-size: 1.12rem;
+  margin: 6px 0 0 0;
+  font-size: 1.03rem;
   font-weight: 800;
   color: #222;
   font-family: 'Montserrat', Arial, sans-serif;
   letter-spacing: 0.2px;
 }
+
+/* TOOLTIP DESPLEGABLE */
 .desc-hover {
   display: none;
   position: absolute;
-  bottom: -66px;
+  bottom: -76px;
   left: 50%;
   transform: translateX(-50%);
   background: #fff;
   border-radius: 14px;
-  padding: 13px 20px;
+  padding: 11px 15px;
   color: #263238;
-  font-size: 1.03rem;
-  box-shadow: 0 4px 28px rgba(45,151,184,0.18);
-  min-width: 190px;
-  max-width: 250px;
-  z-index: 30 !important; /* Super alto, nunca debajo */
+  font-size: 0.98rem;
+  box-shadow: 0 4px 24px rgba(45,151,184,0.16);
+  min-width: 170px;
+  max-width: 230px;
+  z-index: 99 !important; /* SIEMPRE sobre todo */
+  border: 1px solid #e0eef7;
 }
 .circle-item:hover .desc-hover,
 .circle-item:focus .desc-hover {
   display: block;
-  animation: fadeinUp 0.18s;
+  animation: fadeinUp 0.17s;
 }
 @keyframes fadeinUp {
   from { opacity: 0; transform: translate(-50%, 24px);}
   to   { opacity: 1; transform: translate(-50%, 0);}
 }
+
+/* CÍRCULO CENTRAL */
 .circle-center {
   position: absolute;
   left: 50%;
-  top: 52%;   /* Ligeramente abajo para que no tape */
+  top: 50%;
   transform: translate(-50%, -50%);
   background: #2d97b8;
   color: #fff;
   border-radius: 50%;
-  width: 160px;   /* Menor tamaño */
-  height: 160px;
+  width: 156px;
+  height: 156px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 900;
-  font-size: 1.1rem;
-  box-shadow: 0 6px 20px rgba(45,151,184,0.13);
+  font-size: 1.05rem;
+  box-shadow: 0 6px 20px rgba(45,151,184,0.10);
   border: 7px solid #fff;
   font-family: 'Montserrat', Arial, sans-serif;
   text-align: center;
-  padding: 17px;
-  z-index: 2;  /* Más bajo que el tooltip */
+  padding: 7px;
+  z-index: 2;
   transition: box-shadow 0.2s;
+  letter-spacing: 0.03em;
 }
 
+/* TÍTULO DE CASOS CLÍNICOS */
 .titulo-casos {
   text-align: center;
   color: #1977a7;
-  font-size: 2.2rem;
+  font-size: 2.08rem;
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 800;
-  margin-top: 40px;
-  margin-bottom: 25px;
-  letter-spacing: 0.02em;
-  text-shadow: 0 2px 12px rgba(45,151,184,0.07);
+  margin-top: 44px;
+  margin-bottom: 24px;
+  letter-spacing: 0.01em;
+  text-shadow: 0 2px 12px rgba(45,151,184,0.05);
 }
 
+/* Desplaza solo los círculos de abajo */
+.circle-item.abajo {
+  margin-top: 194px; /* Puedes ajustar el valor: prueba 44-56px para que quede perfecto */
+}
 
-/* Extra: para que el header siempre quede arriba */
+/* RESPONSIVE PARA CELULAR */
+@media (max-width: 900px) {
+  .flujo-circular {
+    max-width: 98vw;
+    margin: 48px auto 18px auto;
+    padding: 0 1vw;
+  }
+  .circle-flow {
+    gap: 26px 10px;
+    min-height: 340px;
+  }
+  .circle-item, .circle-center {
+    width: 92px;
+    height: 92px;
+    min-width: 90px;
+    min-height: 90px;
+    padding-bottom: 11px;
+    font-size: 0.85rem;
+  }
+  .img-etapa-circ {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 6px;
+  }
+  .circle-num {
+    top: 2px;
+    right: 7px;
+    width: 20px;
+    height: 20px;
+    font-size: 0.82rem;
+  }
+  .circle-item h3 {
+    font-size: 0.83rem;
+    margin: 2px 0 0 0;
+  }
+  .desc-hover {
+    min-width: 92px;
+    max-width: 82vw;
+    font-size: 0.81rem;
+    padding: 8px 8px;
+    bottom: -60px;
+  }
+}
+
+/* GENERAL */
 body {
   margin: 0;
   font-family: 'Montserrat', Arial, sans-serif;
@@ -151,5 +212,10 @@ body {
 }
 main {
   min-height: 64vh;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
+}
+@media (max-width: 900px) {
+  .circle-item.abajo {
+    margin-top: 18px;
+  }
 }
