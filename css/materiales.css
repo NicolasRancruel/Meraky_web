@@ -25,6 +25,13 @@ h3 {
   color: #222;
   text-align: center;
 }
+.texto-centro-justificado {
+  text-align: justify;
+  margin: 0 auto 32px auto;   /* centrado horizontal y separación abajo */
+  max-width: 1100px;
+  display: block;
+}
+
 .subtitulo-material {
   text-align: center;    /* <-- ¡Ahora sí centrado! */
   color: #2d97b8;
