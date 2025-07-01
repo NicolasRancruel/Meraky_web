@@ -72,7 +72,6 @@
   #hero {
     padding-top: 88px; /* Ajusta el número según el alto real de tu header */
   }
-}
   .hero-overlay {
     max-width: 97vw;
     padding: 24px 6vw;
