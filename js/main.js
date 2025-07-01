@@ -1,20 +1,21 @@
-// Header cambia de transparente a azul al hacer scroll
-window.addEventListener('scroll', function() {
-  const header = document.getElementById('main-header');
-  if (window.scrollY > 50) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
-});
-
-// Mostrar año actual en el footer automáticamente
 document.addEventListener('DOMContentLoaded', () => {
+  // Para el index: header cambia al hacer scroll
+  const header = document.getElementById('main-header');
+  if (header) {
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  }
+
+  // Mostrar año actual en el footer automáticamente
   const anio = document.getElementById('anio');
   if (anio) {
     anio.textContent = new Date().getFullYear();
   }
-});
 
 // Tooltip táctil en móvil
 document.querySelectorAll('.esqueleto-interactivo .punto').forEach(function(punto) {
@@ -53,3 +54,4 @@ document.body.addEventListener('touchstart', function() {
       },
     });
   }
+});
