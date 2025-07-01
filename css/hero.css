@@ -70,9 +70,9 @@
 /* Responsive hero */
 @media (max-width: 700px) {
   #hero {
-    min-height: 62vh;
-    margin-bottom: 30px;  /* Menos separación en móvil */
+    padding-top: 88px; /* Ajusta el número según el alto real de tu header */
   }
+}
   .hero-overlay {
     max-width: 97vw;
     padding: 24px 6vw;
