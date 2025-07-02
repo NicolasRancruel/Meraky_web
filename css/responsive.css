@@ -51,7 +51,7 @@
   .esqueleto-interactivo img,
   #hero {
     max-width: 98vw;
-    width: 100vw;
+    width: 100%;
   }
 
   /* Tooltips más pequeños y adaptados */
