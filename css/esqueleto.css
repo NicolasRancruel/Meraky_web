@@ -101,6 +101,13 @@
   color: #263238;
 }
 
+/* Posiciones por defecto de los tooltips */
+.tooltip-craneo { top: -101px; left: 40px; }
+.tooltip-orbito { top: -110px; right: 40px; }
+.tooltip-orbital { bottom: -136px; left: -500%; transform: translateX(-50%); }
+.tooltip-mandi { top: -136px; left: 550%; transform: translateX(-50%); }
+.tooltip-menton { top: -236px; left: -380px; }
+
 @media (max-width: 700px) {
   .esqueleto-interactivo img {
     max-width: 96vw;
@@ -111,4 +118,10 @@
     padding: 12px 4vw 10px 4vw;
     font-size: 0.97rem;
   }
+  /* Ajustes de posiciones en pantallas pequeñas */
+  .tooltip-craneo { top: -85px; left: 20px; }
+  .tooltip-orbito { top: -90px; right: 20px; }
+  .tooltip-orbital { bottom: -110px; left: -400%; }
+  .tooltip-mandi { top: -110px; left: 380%; }
+  .tooltip-menton { top: -200px; left: -250px; }
 }
