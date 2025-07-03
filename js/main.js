@@ -16,25 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// Tooltip táctil en móvil
-document.querySelectorAll('.esqueleto-interactivo .punto').forEach(function(punto) {
-  punto.addEventListener('touchstart', function(e) {
-    // Cierra otros tooltips
-    document.querySelectorAll('.esqueleto-interactivo .punto').forEach(function(pt) {
-      if (pt !== punto) pt.classList.remove('show-tooltip');
-    });
-    punto.classList.toggle('show-tooltip');
-    e.stopPropagation();
-  });
-});
-
-// Cierra tooltips si tocas fuera
-document.body.addEventListener('touchstart', function() {
-  document.querySelectorAll('.esqueleto-interactivo .punto').forEach(function(pt) {
-    pt.classList.remove('show-tooltip');
-  });
-});
-
   // 🧭 Swiper carrusel (solo en index.html)
   if (document.querySelector(".mySwiper")) {
     const swiper = new Swiper(".mySwiper", {
