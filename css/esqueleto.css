@@ -105,7 +105,7 @@
 .tooltip-craneo { top: -101px; left: 40px; }
 .tooltip-orbito { top: -110px; right: 40px; }
 .tooltip-orbital { bottom: -136px; left: -500%; transform: translateX(-50%); }
-.tooltip-mandi { top: -136px; left: 550%; transform: translateX(-50%); }
+.tooltip-mandi { top: -136px; left: 350%; transform: translateX(-50%); }
 .tooltip-menton { top: -236px; left: -380px; }
 
 @media (max-width: 700px) {
@@ -122,6 +122,6 @@
   .tooltip-craneo { top: -85px; left: 20px; }
   .tooltip-orbito { top: -90px; right: 20px; }
   .tooltip-orbital { bottom: -110px; left: -400%; }
-  .tooltip-mandi { top: -110px; left: 380%; }
+  .tooltip-mandi { top: -110px; left: 240%; }
   .tooltip-menton { top: -200px; left: -250px; }
 }
