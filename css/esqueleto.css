@@ -105,11 +105,8 @@
 .tooltip-craneo { top: -101px; left: 40px; }
 .tooltip-orbito { top: -110px; right: 40px; }
 .tooltip-orbital { bottom: -136px; left: -500%; transform: translateX(-50%); }
-
 .tooltip-mandi { top: -136px; left: 220%; transform: translateX(-50%); }
-
-.tooltip-mandi { top: -136px; left: 350%; transform: translateX(-50%); }
-.tooltip-mandi { top: -136px; left: 450%; transform: translateX(-50%); }
+.tooltip-menton { top: -236px; left: -380px; }
 
 .tooltip-menton { top: -236px; left: -380px; }
 
