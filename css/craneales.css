@@ -74,6 +74,24 @@ p {
   font-size: 1.05rem;
 }
 
+/* Imagen y descripción a la par */
+@media (min-width: 700px) {
+  main > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 18px;
+  }
+  main > div > div:first-child {
+    max-width: 440px;
+  }
+  main > div > div:last-child {
+    min-width: 270px;
+    flex: 1;
+  }
+}
 
 img[alt="Implante craneal"] {
   box-shadow: 0 4px 16px rgba(45,151,184,0.08);
@@ -81,3 +99,31 @@ img[alt="Implante craneal"] {
   margin-bottom: 16px;
 }
 
+/* Responsive ajustes */
+@media (max-width: 900px) {
+  main > div {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .swiper, .swiper-slide img {
+    height: 230px;
+    max-width: 96vw;
+  }
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 1.36rem;
+    margin-top: 16px;
+  }
+  .grupo-material {
+    padding: 11px 9vw;
+  }
+  .swiper, .swiper-slide img {
+    height: 150px;
+    border-radius: 8px;
+  }
+  main {
+    padding: 0 4vw;
+  }
+}

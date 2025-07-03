@@ -8,6 +8,12 @@
   background: #f8fbfc;
 }
 
+@media (max-width: 900px) {
+  .swiper {
+    height: 260px;
+    border-radius: 12px;
+  }
+}
 .swiper-slide {
   display: flex;
   justify-content: center;

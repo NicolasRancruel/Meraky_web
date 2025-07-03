@@ -119,3 +119,38 @@ h3 {
   transform: translateX(-50%) scale(1.03);
 }
 
+/* Responsive grid en móviles */
+@media (max-width: 900px) {
+  .grid-materiales {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tarjeta-material {
+    max-width: 360px;
+    min-width: 220px;
+    width: 92vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .tarjeta-material {
+    max-width: 97vw;
+    min-width: 180px;
+    font-size: 0.98em;
+  }
+  .tooltip-material {
+    min-width: 140px;
+    max-width: 94vw;
+    padding: 13px 5vw 10px 5vw;
+    font-size: 0.97em;
+  }
+  h2 { font-size: 1.2em; }
+}
+
+@media (max-width: 700px) {
+  .subtitulo-material {
+    font-size: 1.06em;
+    margin-top: 24px;
+    margin-bottom: 10px;
+  }
+}
