@@ -15,6 +15,7 @@
 #main-header.scrolled {
   background: #2d97b8;
   box-shadow: 0 2px 10px rgba(0,0,0,0.11);
+  height: auto;
 }
 
 /* HEADER GENERAL */
