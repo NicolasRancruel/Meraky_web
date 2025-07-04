@@ -186,7 +186,9 @@
   }
   /* Raise center circle slightly so it doesn't overlap items 5 and 6 */
   .circle-center {
-    top: 15%;
-    transform: translate(-50%, -50%);
+    width: 90px;
+    height: 90px;
+    font-size: 0.83rem;
+    padding: 7px;
   }
 }
