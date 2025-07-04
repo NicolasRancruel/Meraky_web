@@ -179,4 +179,9 @@
     justify-content: center;
     gap: 12px;
   }
+  /* Separate lower circles from the center on small screens */
+  .item5,
+  .item6 {
+    margin-top: 300px;
+  }
 }
