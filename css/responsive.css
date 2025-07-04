@@ -184,4 +184,9 @@
   .item6 {
     margin-top: 500px;
   }
+  /* Raise center circle slightly so it doesn't overlap items 5 and 6 */
+  .circle-center {
+    top: 45%;
+    transform: translate(-50%, -50%);
+  }
 }
