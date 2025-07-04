@@ -1,6 +1,7 @@
 // Header cambia de transparente a azul al hacer scroll
 window.addEventListener('scroll', function() {
   const header = document.getElementById('main-header');
+  if (!header) return;
   if (window.scrollY > 50) {
     header.classList.add('scrolled');
   } else {
