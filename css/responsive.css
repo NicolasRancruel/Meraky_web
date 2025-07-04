@@ -86,11 +86,6 @@
     justify-content: center;
     gap: 12px;
   }
-  /* Separate lower circles from the center on small screens */
-  .item5,
-  .item6 {
-    margin-top: 500px;
-  }
   /* Raise center circle slightly so it doesn't overlap items 5 and 6 */
   .circle-center {
     width: 90px;
@@ -98,6 +93,8 @@
     font-size: 0.83rem;
     padding: 7px;
   }
+  .circle-item.item5,
+  .circle-item.item6 { margin-top: 360px; }
 }
 
 /* ---- Ajustes mínimos para pantallas MUY pequeñas ---- */
