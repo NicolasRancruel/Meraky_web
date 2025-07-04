@@ -107,10 +107,6 @@
 .tooltip-orbital { bottom: -136px; left: -500%; transform: translateX(-50%); }
 .tooltip-mandi { top: -136px; left: 220%; transform: translateX(-50%); }
 .tooltip-menton { top: -236px; left: -380px; }
-
-.tooltip-menton { top: -236px; left: -380px; }
-
-47wv3r-codex/new-task
 @media (max-width: 700px) {
   .esqueleto-interactivo img {
     max-width: 96vw;
@@ -125,6 +121,16 @@
   .tooltip-craneo { top: -85px; left: 20px; }
   .tooltip-orbito { top: -90px; right: 20px; }
   .tooltip-orbital { bottom: -110px; left: -400%; }
-  .tooltip-mandi { top: -110px; left: 150%; }
-  .tooltip-menton { top: -200px; left: 50px; }
+  .tooltip-mandi {
+    top: auto;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .tooltip-menton {
+    top: auto;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

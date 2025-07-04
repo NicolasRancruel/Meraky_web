@@ -121,8 +121,9 @@
   .flujo-circular h2 { font-size: 1.4rem; }
 }
 @media (max-width: 650px) {
-  .circle-flow { gap: 13px 6px; }
-  .circle-item { width: 90px; height: 90px; padding-bottom: 0;}
+  .circle-flow { gap: 20px 16px; }
+  .circle-item { width: 90px; height: 90px; padding-bottom: 0; }
+  .circle-item.abajo { margin-top: 260px; }
   .img-etapa-circ { width: 30px; height: 30px; }
   .circle-num { width: 16px; height: 16px; font-size: 0.75rem; top: 2px; right: 5px; }
 }
