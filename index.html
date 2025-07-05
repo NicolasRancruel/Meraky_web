@@ -170,9 +170,12 @@
     ¿Tienes preguntas o quieres cotizar un implante a la medida? Déjanos tus datos y nos pondremos en contacto contigo lo antes posible.
   </p>
   <form action="https://formspree.io/f/mrbqvbgk" method="POST" class="formulario-contacto">
-    <input type="text" name="nombre" placeholder="Tu nombre completo" required>
-    <input type="email" name="email" placeholder="Tu correo electrónico" required>
-    <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+    <label for="nombre">Nombre completo</label>
+    <input id="nombre" type="text" name="nombre" placeholder="Tu nombre completo" required>
+    <label for="email">Correo electrónico</label>
+    <input id="email" type="email" name="email" placeholder="Tu correo electrónico" required>
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
     <button type="submit">Enviar mensaje</button>
   </form>
   <div id="mensaje-exito" class="notificacion-exito">
