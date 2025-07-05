@@ -1,6 +1,7 @@
 // Header cambia de transparente a azul al hacer scroll
 window.addEventListener('scroll', function() {
   const header = document.getElementById('main-header');
+  if (!header) return;
   if (window.scrollY > 50) {
     header.classList.add('scrolled');
   } else {
@@ -16,21 +17,24 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-  // 🧭 Swiper carrusel (solo en index.html)
-  if (document.querySelector(".mySwiper")) {
-    const swiper = new Swiper(".mySwiper", {
+// 🧭 Swiper carrusel (index.html y páginas con más de un carrusel)
+if (document.querySelectorAll('.mySwiper').length) {
+  const swipers = document.querySelectorAll('.mySwiper');
+  swipers.forEach((swiperEl) => {
+    new Swiper(swiperEl, {
       loop: true,
       autoplay: {
         delay: 6000,
         disableOnInteraction: false,
       },
       pagination: {
-        el: ".swiper-pagination",
+        el: swiperEl.querySelector('.swiper-pagination'),
         clickable: true,
       },
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: swiperEl.querySelector('.swiper-button-next'),
+        prevEl: swiperEl.querySelector('.swiper-button-prev'),
       },
     });
-  }
+  });
+}

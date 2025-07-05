@@ -6,7 +6,7 @@
   <title>Meraky - Soluciones a la medida</title>
   <link rel="icon" type="image/png" href="img/favicon.png">
   <!-- Google Fonts: Montserrat -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;display=swap" rel="stylesheet">
   
   <!-- SEO Básico -->
   <meta name="description" content="Meraky ofrece implantes personalizados a la medida, planificación quirúrgica y soluciones innovadoras en materiales como PEEK y PMMA.">
@@ -170,9 +170,12 @@
     ¿Tienes preguntas o quieres cotizar un implante a la medida? Déjanos tus datos y nos pondremos en contacto contigo lo antes posible.
   </p>
   <form action="https://formspree.io/f/mrbqvbgk" method="POST" class="formulario-contacto">
-    <input type="text" name="nombre" placeholder="Tu nombre completo" required>
-    <input type="email" name="email" placeholder="Tu correo electrónico" required>
-    <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+    <label for="nombre">Nombre completo</label>
+    <input id="nombre" type="text" name="nombre" placeholder="Tu nombre completo" required>
+    <label for="email">Correo electrónico</label>
+    <input id="email" type="email" name="email" placeholder="Tu correo electrónico" required>
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
     <button type="submit">Enviar mensaje</button>
   </form>
   <div id="mensaje-exito" class="notificacion-exito">
