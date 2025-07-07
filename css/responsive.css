@@ -86,32 +86,8 @@
     justify-content: center;
     gap: 12px;
   }
-  /* Raise center circle slightly for smaller screens */
-  .circle-center {
-    width: 90px;
-    height: 90px;
-    font-size: 0.83rem;
-    padding: 7px;
-  }
-  /* unify margin of all bottom items */
-  .circle-item.abajo { margin-top: 260px; }
 }
 
-/* ---- Ajustes mínimos para pantallas MUY pequeñas ---- */
-@media (max-width: 430px) {
-  .tooltip-personalizado {
-    min-width: 100px;
-    font-size: 0.93rem;
-    padding: 8px 1vw 8px 1vw;
-  }
-  .tooltip-personalizado img {
-    width: 64px !important;
-    height: 64px !important;
-  }
-  .contenido-servicio h3 {
-    font-size: 0.89rem;
-  }
-}
 
 /* ---- Otros pequeños ajustes ---- */
 @media (max-width: 360px) {
@@ -140,6 +116,7 @@
   .circle-item.abajo { margin-top: 260px; }
   .img-etapa-circ { width: 30px; height: 30px; }
   .circle-num { width: 16px; height: 16px; font-size: 0.75rem; top: 2px; right: 5px; }
+  .circle-center { width: 90px; height: 90px; font-size: 0.83rem; padding: 7px; }
 }
 @media (max-width: 500px) {
   .flujo-circular { margin-top: 24vw; }
@@ -173,17 +150,26 @@
     max-height: 190px;
   }
 }
-@media (max-width: 900px) {
-  .circle-center {
-    width: 90px;
-    height: 90px;
-    font-size: 0.83rem;
-    padding: 7px;
-  }
-  .desc-hover {
+
+/* ---- Ajustes mínimos para pantallas MUY pequeñas ---- */
+@media (max-width: 430px) {
+  .tooltip-personalizado {
     min-width: 100px;
-    max-width: 160px;
-    font-size: 0.91rem;
-    padding: 8px 7px;
+    font-size: 0.93rem;
+    padding: 8px 1vw 8px 1vw;
   }
+  .tooltip-personalizado img {
+    width: 64px !important;
+    height: 64px !important;
+  }
+  .contenido-servicio h3 {
+    font-size: 0.89rem;
+  }
+  /* Flujo circular más compacto para móviles muy pequeños */
+  .circle-flow { gap: 12px 10px; }
+  .circle-item { width: 72px; height: 72px; }
+  .img-etapa-circ { width: 28px; height: 28px; }
+  .circle-num { width: 14px; height: 14px; font-size: 0.7rem; top: 2px; right: 4px; }
+  .circle-item.abajo { margin-top: 230px; }
+  .circle-center { width: 80px; height: 80px; font-size: 0.8rem; }
 }
