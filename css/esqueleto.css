@@ -133,4 +133,7 @@
     left: 70%;
     transform: translateX(-50%);
   }
+    .punto-menton {
+    left: 46%; /* Usa el valor que mejor se alinee con tu imagen */
+  }
 }
