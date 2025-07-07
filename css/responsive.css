@@ -86,15 +86,15 @@
     justify-content: center;
     gap: 12px;
   }
-  /* Raise center circle slightly so it doesn't overlap items 5 and 6 */
+  /* Raise center circle slightly for smaller screens */
   .circle-center {
     width: 90px;
     height: 90px;
     font-size: 0.83rem;
     padding: 7px;
   }
-  .circle-item.item5,
-  .circle-item.item6 { margin-top: 360px; }
+  /* unify margin of all bottom items */
+  .circle-item.abajo { margin-top: 260px; }
 }
 
 /* ---- Ajustes mínimos para pantallas MUY pequeñas ---- */
