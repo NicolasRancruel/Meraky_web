@@ -134,6 +134,6 @@
     transform: translateX(-50%);
   }
   .punto-menton {
-    left: 6% !important; /* usa el valor que necesites */
+    left: 16% !important; /* usa el valor que necesites */
   }
 }
