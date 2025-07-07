@@ -130,7 +130,7 @@
   .tooltip-menton {
     top: auto;
     bottom: 120%;
-    left: 50%;
+    left: 70%;
     transform: translateX(-50%);
   }
 }
