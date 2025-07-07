@@ -133,7 +133,7 @@
     left: 70%;
     transform: translateX(-50%);
   }
-  .punto punto-menton {
-    left: 6% !important; /* o el porcentaje que necesites */
+  .punto-menton {
+    left: 6% !important; /* usa el valor que necesites */
   }
 }
