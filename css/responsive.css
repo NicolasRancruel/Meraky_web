@@ -47,7 +47,7 @@
 @media (max-width: 700px) {
 
   /* Imagen hero y esqueleto: máximo ancho */
-  .esqueleto-interactivo img,
+  .esqueleto-interactivo,
   #hero {
     max-width: 98vw;
     width: 100%;
