@@ -7,6 +7,7 @@
   <title>Ortopedia - Meraky</title>
   <link rel="icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 <body>
     <header class="header-azul">
@@ -31,18 +32,19 @@
   </div>
 </header>
 
-  <main style="text-align: center; padding: 80px 20px;">
-    
-    <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start; justify-content: center; margin-top: 60px;">
-      <div style="flex: 1; min-width: 300px; max-width: 500px;">
-        <img loading="lazy" src="img/ortopedia.jpg" alt="Implante ortopédico" style="width: 100%; border-radius: 10px;" />
+  <main>
+    <h1>Implantes ortopédicos personalizados</h1>
+
+    <div class="seccion-flex">
+      <div class="img-col">
+        <img loading="lazy" src="img/ortopedia.jpg" alt="Implante ortopédico" />
       </div>
-      <div style="flex: 1; min-width: 300px;">
+      <div class="texto-col">
         <p>
           En Meraky estamos desarrollando implantes ortopédicos a la medida para diferentes áreas del cuerpo,
           buscando siempre una integración funcional, resistencia mecánica óptima y materiales biocompatibles.
         </p>
-        <h3 style="color: #2d97b8;">Materiales utilizados</h3>
+        <h3 class="titulo-secundario">Materiales utilizados</h3>
         <div class="materiales-contenedor">
           <div class="grupo-material">
             <h4>Materiales Bioinertes</h4>
@@ -62,8 +64,8 @@
       </div>
     </div>
 
-    <h2 style="margin-top: 50px;">Casos clínicos a la medida</h2>
-    <div class="swiper mySwiper" style="margin-top: 20px; max-width: 600px; margin-inline: auto;">
+    <h2 class="titulo-secundario">Casos clínicos a la medida</h2>
+    <div class="swiper mySwiper swiper-centro">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img loading="lazy" src="img/ortopedia.jpg" alt="Caso clínico 1"></div>
         <div class="swiper-slide"><img loading="lazy" src="img/ortopedia.jpg" alt="Caso clínico 2"></div>
@@ -74,16 +76,17 @@
 
   <footer>
     <div class="footer-content">
-      <img loading="lazy" src="img/LOGO_MERAKY.png" alt="Logo Meraky" style="height: 50px; margin-bottom: 10px;" />
+      <img loading="lazy" src="img/LOGO_MERAKY.png" alt="Logo Meraky" />
       <p>© <span id="anio"></span> Meraky. Todos los derechos reservados.</p>
-      <div style="margin: 10px 0;">
-        <a href="https://maps.app.goo.gl/mAawoEfUnV61vtST7" target="_blank"><img loading="lazy" src="img/facebook-icon.png" alt="Ubicación" style="height: 24px; margin: 0 8px;" /></a>
-        <a href="https://www.instagram.com/meraky62018" target="_blank"><img loading="lazy" src="img/instagram-icon.png" alt="Instagram" style="height: 24px; margin: 0 8px;" /></a>
-        <a href="https://wa.me/5730175688720" target="_blank"><img loading="lazy" src="img/whatsapp-icon.png" alt="WhatsApp" style="height: 24px; margin: 0 8px;" /></a>
+      <div class="footer-icons">
+        <a href="https://maps.app.goo.gl/mAawoEfUnV61vtST7" target="_blank"><img loading="lazy" src="img/facebook-icon.png" alt="Ubicación" /></a>
+        <a href="https://www.instagram.com/meraky62018" target="_blank"><img loading="lazy" src="img/instagram-icon.png" alt="Instagram" /></a>
+        <a href="https://wa.me/5730175688720" target="_blank"><img loading="lazy" src="img/whatsapp-icon.png" alt="WhatsApp" /></a>
       </div>
       <p><a href="index.html">Inicio</a> | <a href="index.html#contacto">Contáctanos</a></p>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

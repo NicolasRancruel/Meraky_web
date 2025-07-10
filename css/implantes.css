@@ -1,0 +1,34 @@
+.seccion-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.img-col {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.img-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.texto-col {
+  flex: 1;
+  min-width: 300px;
+}
+
+.swiper-centro {
+  margin-top: 20px;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.titulo-secundario {
+  color: #2d97b8;
+}

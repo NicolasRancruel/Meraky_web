@@ -25,3 +25,12 @@ footer {
   text-decoration: underline;
   color: #2d97b8;
 }
+
+.footer-icons {
+  margin: 10px 0;
+}
+
+.footer-icons img {
+  height: 24px;
+  margin: 0 8px;
+}
