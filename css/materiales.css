@@ -123,4 +123,11 @@ h3 {
 /* Introducción con imagen a dos columnas */
 .intro-materiales { margin-bottom: 40px; }
 .intro-materiales .texto-col { text-align: justify; }
+.subtitulo-imagen {
+  color: #2d97b8;
+  margin-top: 12px;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 700;
+}
 
