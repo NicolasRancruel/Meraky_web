@@ -61,7 +61,8 @@
   padding: 18px 16px 12px 16px;
   opacity: 0;
   pointer-events: none;
-  transform: scale(0.97);
+  /* Mezcla traslación horizontal y escala */
+  transform: translateX(var(--shift,0)) scale(0.97);
   z-index: 9999;
   transition:
     opacity 0.32s cubic-bezier(.4,2,.3,1),
@@ -69,6 +70,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* Permite que texto e imagen no se corten */
+  overflow: visible;
   box-sizing: border-box;
 }
 
@@ -78,7 +81,8 @@
 .punto.show-tooltip .tooltip-personalizado {
   opacity: 1;
   pointer-events: auto;
-  transform: scale(1);
+  /* Mantiene traslación y escala al mostrarse */
+  transform: translateX(var(--shift,0)) scale(1);
 }
 
 /* Para que sobresalga el punto activo */
@@ -113,8 +117,8 @@
 /* Posiciones por defecto de los tooltips */
 .tooltip-craneo { top: -101px; left: 40px; }
 .tooltip-orbito { top: -110px; right: 40px; }
-.tooltip-orbital { bottom: -136px; left: -500%; transform: translateX(-50%); }
-.tooltip-mandi { top: -136px; left: 220%; transform: translateX(-50%); }
+.tooltip-orbital { bottom: -136px; left: -500%; --shift: -50%; }
+.tooltip-mandi { top: -136px; left: 220%; --shift: -50%; }
 .tooltip-menton { top: -236px; left: -380px; }
 @media (max-width: 700px) {
   .esqueleto-interactivo {
@@ -134,13 +138,13 @@
     top: auto;
     bottom: 110%;
     left: 50%;
-    transform: translateX(-50%);
+    --shift: -50%;
   }
   .tooltip-menton {
     top: auto;
     bottom: 120%;
     left: 70%;
-    transform: translateX(-50%);
+    --shift: -50%;
   }
   .punto-menton {
     left: 30% !important; /* usa el valor que necesites */
