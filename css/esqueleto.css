@@ -1,15 +1,22 @@
 .esqueleto-interactivo {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 430px;
+  width: 98vw;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.esqueleto-interactivo::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
 }
 
 .esqueleto-interactivo img {
-  width: 98vw;
-  max-width: 560px;
-  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: block;
 }
 
@@ -21,6 +28,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: translate(-50%, -50%);
 }
 
 .punto span {
@@ -108,8 +116,8 @@
 .tooltip-mandi { top: -136px; left: 220%; transform: translateX(-50%); }
 .tooltip-menton { top: -236px; left: -380px; }
 @media (max-width: 700px) {
-  .esqueleto-interactivo img {
-    max-width: 96vw;
+  .esqueleto-interactivo {
+    width: 96vw;
   }
   .tooltip-personalizado {
     min-width: 158px;
