@@ -47,7 +47,7 @@
 @media (max-width: 700px) {
 
   /* Imagen hero y esqueleto: máximo ancho */
-  .esqueleto-interactivo,
+  .esqueleto-interactivo img,
   #hero {
     max-width: 98vw;
     width: 100%;
@@ -61,8 +61,8 @@
     font-size: 0.97rem;
   }
   .tooltip-personalizado img {
-    max-width: 100% !important;
-    height: auto !important;
+    width: 95px !important;
+    height: 95px !important;
   }
 
   /* Hero: tamaño del texto más pequeño */
@@ -142,8 +142,8 @@
     padding: 8px 1vw 8px 1vw;
   }
   .tooltip-personalizado img {
-    max-width: 100% !important;
-    height: auto !important;
+    width: 64px !important;
+    height: 64px !important;
   }
   .contenido-servicio h3 {
     font-size: 0.89rem;
