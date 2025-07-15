@@ -1,3 +1,51 @@
+
+.banner-consultoria {
+  background: #f5f5f5;
+  padding: 60px 20px;
+  text-align: center;
+}
+.consultoria-card {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.consultoria-card h1 {
+  margin-bottom: 10px;
+  color: #2d97b8;
+}
+.consultoria-card p {
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+.btn-consultoria {
+  display: inline-block;
+  background: #2d97b8;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 12px 36px;
+  text-decoration: none;
+  transition: background .18s;
+}
+.btn-consultoria:hover {
+  background: #197b93;
+}
+.beneficios-consultoria {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.beneficios-consultoria ul {
+  list-style: none;
+  padding: 0;
+}
+.beneficios-consultoria li {
+  margin: 12px 0;
+  font-size: 1.05rem;
+}
+.beneficios-consultoria i {
+  margin-right: 8px;
+  color: #2d97b8;
+}
 /* ===== Consultoría CSS ===== */
 
 /* Banner principal de consultoría */
@@ -95,4 +143,3 @@
   transform: translateY(-2px);
   color: #fff;
 }
-
