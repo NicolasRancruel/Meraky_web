@@ -4,9 +4,9 @@
   padding: 60px 20px;
   text-align: center;
 }
+/* Estilos iniciales de la tarjeta - se mantienen para compatibilidad */
 .consultoria-card {
-  max-width: 800px;
-  margin: 0 auto;
+  margin: 0;
 }
 .consultoria-card h1 {
   margin-bottom: 10px;
@@ -63,20 +63,29 @@
 }
 
 .consultoria-banner img {
-  max-width: 320px;
+  /* Imagenes de apoyo en la sección principal */
+  max-width: 360px;
   width: 100%;
   border-radius: 16px;
   box-shadow: 0 4px 16px rgba(45,151,184,0.12);
+}
+
+/* Contenedor para las dos imagenes */
+.consultoria-imagenes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 
 /* Tarjeta individual dentro del banner */
 .consultoria-card {
   background: #fff;
   border-radius: 16px;
-  padding: 24px;
+  padding: 32px; /* mas espacio interno */
   box-shadow: 0 4px 20px rgba(45,151,184,0.12);
-  max-width: 340px;
-  flex: 1 1 300px;
+  max-width: 460px; /* ancho ampliado */
+  flex: 1 1 340px;
 }
 
 .consultoria-card h3 {
