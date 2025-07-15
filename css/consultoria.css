@@ -1,3 +1,4 @@
+
 .banner-consultoria {
   background: #f5f5f5;
   padding: 60px 20px;
@@ -44,4 +45,101 @@
 .beneficios-consultoria i {
   margin-right: 8px;
   color: #2d97b8;
+}
+/* ===== Consultoría CSS ===== */
+
+/* Banner principal de consultoría */
+.consultoria-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background: #f5fbff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  margin: 20px auto;
+  max-width: 1100px;
+  box-shadow: 0 6px 24px rgba(45,151,184,0.08);
+}
+
+.consultoria-banner img {
+  max-width: 320px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(45,151,184,0.12);
+}
+
+/* Tarjeta individual dentro del banner */
+.consultoria-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(45,151,184,0.12);
+  max-width: 340px;
+  flex: 1 1 300px;
+}
+
+.consultoria-card h3 {
+  margin-top: 0;
+  color: #2d97b8;
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.consultoria-card p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #333;
+  text-align: justify;
+}
+
+/* Sección de beneficios */
+.beneficios-consultoria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.beneficio {
+  background: #eaf5fa;
+  border-radius: 14px;
+  padding: 18px 20px;
+  flex: 1 1 260px;
+  box-shadow: 0 2px 12px rgba(45,151,184,0.08);
+}
+
+.beneficio h4 {
+  margin: 0 0 8px 0;
+  color: #2d97b8;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.beneficio p {
+  margin: 0;
+  font-size: 1.02rem;
+  color: #334;
+}
+
+/* Botón de solicitud de asesoría */
+.btn-asesoria {
+  display: inline-block;
+  background: #2d97b8;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-asesoria:hover,
+.btn-asesoria:focus {
+  background: #1a809d;
+  transform: translateY(-2px);
+  color: #fff;
 }
