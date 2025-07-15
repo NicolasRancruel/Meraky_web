@@ -86,6 +86,11 @@
     justify-content: center;
     gap: 12px;
   }
+  /* Consultoría: banner en columna */
+  .consultoria-banner {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 
