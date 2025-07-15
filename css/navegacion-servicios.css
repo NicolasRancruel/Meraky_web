@@ -1,0 +1,46 @@
+/* === Navegación lateral servicios === */
+.servicios-nav {
+  position: relative; /* contexto para tooltips */
+}
+.servicios-nav .nav-arrow {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  background: #2d97b8;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 48px;
+  font-size: 1.8rem;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+.servicios-nav .nav-arrow.left {
+  left: 10px;
+}
+.servicios-nav .nav-arrow.right {
+  right: 10px;
+}
+.servicios-nav .nav-arrow:hover::after,
+.servicios-nav .nav-arrow:focus::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 0.75rem;
+}
+/* -- Ajustes responsivos -- */
+@media (hover: none) {
+  .servicios-nav .nav-arrow:hover::after {
+    display: none;
+  }
+}
