@@ -84,8 +84,8 @@
   border-radius: 16px;
   padding: 32px; /* mas espacio interno */
   box-shadow: 0 4px 20px rgba(45,151,184,0.12);
-  max-width: 460px; /* ancho ampliado */
-  flex: 1 1 340px;
+  max-width: 600px; /* ancho ampliado para evitar contenido ajustado */
+  flex: 1 1 420px; /* base mayor para ocupar más espacio */
 }
 
 .consultoria-card h3 {
