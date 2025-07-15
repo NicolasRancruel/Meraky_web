@@ -32,5 +32,10 @@ footer {
 
 .footer-icons img {
   height: 24px;
-  margin: 0 8px;
+  margin: 0 12px;
+}
+
+.footer-logo {
+  height: 50px;
+  margin-bottom: 10px;
 }
